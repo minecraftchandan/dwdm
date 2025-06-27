@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact Survey Insights</title>
+    <style>
+  :root {
+    --primary: #3498db;
+    --accent: #2ecc71;
+    --text-dark: #2c3e50;
+    --bg-light: #f4f7f6;
+    --box-bg: #fff;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --radius: 12px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    padding: 1rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--box-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #34495e;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid var(--primary);
+    padding-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    color: var(--primary);
+    margin-top: 2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .problem-statement,
+  .model-info {
+    background-color: #eaf3fc;
+    border-left: 5px solid var(--primary);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+  }
+
+  .model-info {
+    background-color: #dcf1ee;
+    border-left-color: var(--accent);
+  }
+
+  .cluster-insight,
+  .key-finding {
+    background-color: #f1f1f1;
+    border-left: 5px solid #bdc3c7;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .graph-placeholder {
+    text-align: center;
+    margin: 2rem 0;
+    background-color: #ecf0f1;
+    padding: 2rem;
+    border-radius: var(--radius);
+    border: 2px dashed #95a5a6;
+  }
+
+  .graph-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
+  }
+
+  .graph-placeholder p {
+    font-style: italic;
+    color: #7f8c8d;
+  }
+
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+
+    .container {
+      padding: 1.2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .graph-placeholder {
+      padding: 1.2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+  }
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Genshin Impact Survey Analysis: Player Behavior & Preferences</h1>
+
+
+         <div class="problem-statement">
+            <h2>Problem Statement (Objective)</h2>
+            <p>"Can we predict whether a player participates in Spiral Abyss based on their gameplay preferences and profile?"</p>
+        </div><br>
+
+         <div class="graph-placeholder">
+            <h3>Cluster Analysis Graph</h3>
+            <img src="cluster_scatterplot_from_xlsx.png" alt="Placeholder for Cluster Analysis Graph">
+        </div>
+
+        <h2>Cluster Insights</h2>
+
+        <div class="cluster-insight">
+            <h3>Cluster 0 Insights:</h3>
+            <ul>
+                <li>Predominantly mobile players (100.00%).</li>
+                <li>Top favorite region is Inazuma (25.00%).</li>
+                <li>Top favorite element is Hydro (31.25%).</li>
+                <li>Top favorite weapon type is Bow (31.25%).</li>
+                <li>Most of these players do play Spiral Abyss (100.00%) and have an Adventure Rank of 60 (62.50%).</li>
+                <li>Their top favorite Archon is Venti (31.25%).</li>
+            </ul>
+        </div>
+
+        <div class="cluster-insight">
+            <h3>Cluster 1 Insights:</h3>
+            <ul>
+                <li>Mainly PC players (94.44%).</li>
+                <li>Also show a strong preference for Inazuma region (33.33%).</li>
+                <li>Top favorite element is Dendro (27.78%).</li>
+                <li>Top favorite weapon type is Polearm (38.89%).</li>
+                <li>Most do play Spiral Abyss (83.33%) and have an Adventure Rank of 60 (83.33%).</li>
+                <li>Their top favorite Archon is Furina (33.33%).</li>
+            </ul>
+        </div>
+
+        <div class="cluster-insight">
+            <h3>Cluster 2 Insights:</h3>
+            <ul>
+                <li>A mixed group in terms of platform, with mobile being the most frequent (37.50%).</li>
+                <li>Have a clear preference for the Sumeru region (43.75%).</li>
+                <li>Top favorite element is Pyro (25.00%).</li>
+                <li>Top favorite weapon type is Bow (37.50%).</li>
+                <li>Notably, none of the players in this cluster play Spiral Abyss (100.00% 'no'). Their Adventure Rank is often 60 (37.50%), but this is less dominant than in other clusters.</li>
+                <li>Their top favorite Archon is Nahida (25.00%).</li>
+            </ul>
+        </div>
+        <h2>Overall Key Findings</h2>
+
+         <div class="graph-placeholder">
+            <h3>Platform Preference Graph</h3>
+            <img src="most_popular_platforms_bar_chart_corrected.png" alt="Placeholder for Platform Preference Graph">
+        </div>
+
+        <div class="key-finding">
+            <h3>Preferred Gaming Platforms</h3>
+            <ul>
+                <li><strong>PC Dominance:</strong> The data clearly indicates that PC is the most preferred platform for playing Genshin Impact among the surveyed individuals, accounting for the largest proportion of respondents.</li>
+                <li><strong>Strong Mobile Presence:</strong> Mobile devices represent the second most popular platform, showing a substantial segment of players who prefer handheld gaming for Genshin Impact. This indicates the game's significant reach on portable devices.</li>
+                <li><strong>Limited Console Preference:</strong> PlayStation (PS) usage is notably lower compared to both PC and Mobile, suggesting that console gaming, at least among this specific respondent group, is a less common choice for Genshin Impact.</li>
+            </ul>
+        </div>
+        <div class="key-finding">
+            <h3>Region and Archon Preference Alignment</h3>
+
+            <div class="graph-placeholder">
+            <h3>Region vs. Archon Preference Graph</h3>
+            <img src="region_archon_preference_grouped_bar_chart.png" alt="Placeholder for Region vs. Archon Preference Graph">
+        </div>
+            <ul>
+                <li><strong>Strong Alignment of Region and Archon Preference:</strong> For most regions, there's a very strong tendency for respondents to favor the Archon associated with that specific region.</li>
+                <li><strong>Mondstadt:</strong> Players whose favorite region is Mondstadt overwhelmingly prefer Venti.</li>
+                <li><strong>Liyue:</strong> Similarly, Zhongli is the clear favorite among Liyue enthusiasts.</li>
+                <li><strong>Inazuma:</strong> The Raiden Shogun (Ei) is the dominant choice for those who favor Inazuma.</li>
+                <li><strong>Sumeru:</strong> Nahida is the most preferred Archon by players who choose Sumeru as their favorite region.</li>
+                <li><strong>Fontaine:</strong> Furina is the most popular Archon among those who favor Fontaine.</li>
+                <li><strong>Minor Cross-Regional Preferences:</strong> While the primary alignment is strong, the chart also shows a smaller number of players who might prefer an Archon from a different region than their favorite. For example, some Mondstadt fans might like Nahida, or some Liyue fans might like Furina, but these numbers are significantly lower than the region-specific Archon preference.</li>
+                <li><strong>Insights into Character Affinity:</strong> This strong correlation suggests that players often develop a deep connection to the lore, aesthetics, and characters of a region, with the Archon serving as a central figure embodying that region's appeal. It indicates that the Archons are highly successful in representing their respective nations in the eyes of players.</li>
+            </ul>
+        </div>
+        <div class="model-info">
+            <h2>Prediction Model Information</h2>
+            <p><strong>Model Used:</strong> Random Forest Classifier</p>
+            <p><strong>Prediction Accuracy:</strong> 60% (on a small sample of 50 entries)</p>
+        </div>
+    </div>
+
+    <script>
+        // You can add JavaScript here for any dynamic behavior if needed in the future.
+        // For now, this is a static page based on your request.
+    </script>
+</body>
+</html>
